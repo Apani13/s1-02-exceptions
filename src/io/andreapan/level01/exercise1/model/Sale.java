@@ -15,14 +15,16 @@ public class Sale {
         this.totalSalePrice = 0;
     }
 
+    public ArrayList<Product> getProducts() {
+        return this.products;
+    }
+
+    public double getTotalSalePrice() {
+        return this.totalSalePrice;
+    }
 
     public void addProduct(Product product) {
         products.add(product);
-    }
-
-
-    public ArrayList<Product> getProducts() {
-        return products;
     }
 
     public void calculateTotalPrice() throws EmptySaleException {

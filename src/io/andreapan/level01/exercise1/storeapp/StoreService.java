@@ -1,6 +1,7 @@
 package io.andreapan.level01.exercise1.storeapp;
 
 import io.andreapan.level01.exercise1.exceptions.EmptySaleException;
+import io.andreapan.level01.exercise1.model.Product;
 import io.andreapan.level01.exercise1.model.Sale;
 
 public class StoreService {
@@ -16,6 +17,7 @@ public class StoreService {
 
         try {
             sale.calculateTotalPrice();
+            message = "Total price of sale: " + sale.getTotalSalePrice() + " €";
 
         } catch (EmptySaleException e) {
 
@@ -31,7 +33,9 @@ public class StoreService {
         String message = "";
 
         try {
-            sale.getProducts().get(index);
+            Product product = sale.getProducts().get(index);
+            message = "Product found at position " + index + " of array: " + product.getProductName();
+
         } catch (IndexOutOfBoundsException e) {
 
             message = "Index out of bounds exception: " + e.getMessage();
