@@ -4,12 +4,8 @@
 🛠️ **Java Exception Handling Exercises**
 
 📝 **Description**
-This repository contains structured Java exercises focused on learning and applying exception handling concepts. Through custom and built-in exceptions, you'll practice writing robust, user-friendly input validation and error management routines in Java.
 
-📌 Use IntelliJ IDEA or Eclipse for development.
-📌 Follow Sprint 0 guidelines for best practices and GitHub organization.
-📌 Projects may use plain Java or be built with Maven/Gradle.
-📌 All code and documentation must be in English.
+This repository contains structured Java exercises focused on learning and applying exception handling concepts. Through custom and built-in exceptions, you'll practice writing robust, user-friendly input validation and error management routines in Java.
 
 🚀 **Objectives**
 
@@ -18,15 +14,16 @@ This repository contains structured Java exercises focused on learning and apply
 * Practice robust input handling with `Scanner` and loops.
 * Strengthen understanding of user input validation.
 
+
 📚 **Exercise Overview**
 
 ### Level 1
 
 #### Exercise 1 – Sale with Custom Exception
 
-* Create a `Product` class with `name` and `price` attributes.
-* Create a `Sale` class containing a collection of `Product` objects and a `totalPrice` field.
-* Add a method `calculateTotal()` that throws a custom exception `EmptySaleException` if the product list is empty.
+* Create a `Product` class with `productName` and `productPrice` attributes.
+* Create a `Sale` class containing a collection of `Product` objects and a `totalSalePrice` field.
+* Add a method `calculateTotalPrice()` that throws a custom exception `EmptySaleException` if the product list is empty.
 * The `EmptySaleException` must extend `Exception` and include the message:
 
   > "To make a sale, you must first add products."
@@ -50,7 +47,6 @@ This repository contains structured Java exercises focused on learning and apply
 * Java
 * IntelliJ IDEA or Eclipse
 * GitHub
-* (Optional) Maven or Gradle
 
 📋 **Requirements**
 
@@ -61,7 +57,7 @@ This repository contains structured Java exercises focused on learning and apply
 🛠️ **Installation**
 
 ```bash
-git clone https://github.com/your-user/java-exception-exercises.git
+git clone 
 ```
 
 1. Open the project in IntelliJ IDEA or Eclipse.
