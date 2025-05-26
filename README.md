@@ -57,12 +57,12 @@ This repository contains structured Java exercises focused on learning and apply
 🛠️ **Installation**
 
 ```bash
-git clone 
+git clone https://github.com/Apani13/s1-02-exceptions.git
 ```
 
 1. Open the project in IntelliJ IDEA or Eclipse.
-2. If using Maven or Gradle, import accordingly. Otherwise, set it up as a standard Java project.
-3. Ensure the project is using Java 17+.
+
+2. Ensure the project is using Java 17+.
 
 ▶️ **Execution**
 
@@ -75,15 +75,6 @@ java Main
 
 💡 Ensure `main()` is defined and the correct entry point if using a build tool.
 
-🌐 **Deployment**
-
-This is an educational project and not intended for production. However, to create a runnable `.jar`:
-
-```bash
-javac Main.java
-jar cfe ExceptionExercises.jar Main *.class
-java -jar ExceptionExercises.jar
-```
 
 🤝 **Contributions**
 
