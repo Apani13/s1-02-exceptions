@@ -19,7 +19,7 @@ public class StoreAppController {
 
         message += "loading products to array..." + "\n\n";
 
-        productsData.CreateAndLoadProducts(sale);
+        productsData.createAndLoadProducts(sale);
 
         message += "TESTING EXCEPTIONS AFTER PRODUCTS ARE ADDED TO ARRAY\n\n"
                 + storeService.checkEmptyArray() + "\n"

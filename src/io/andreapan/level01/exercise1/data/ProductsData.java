@@ -5,7 +5,7 @@ import io.andreapan.level01.exercise1.model.Sale;
 
 public class ProductsData {
 
-    public void CreateAndLoadProducts(Sale sale) {
+    public void createAndLoadProducts(Sale sale) {
 
         sale.addProduct( new Product("Chicken", 4.99) );
         sale.addProduct( new Product("Apple", 0.45) );

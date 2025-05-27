@@ -1,9 +1,9 @@
 package io.andreapan.level02.exercise1.model;
 
-import io.andreapan.level02.exercise1.exceptions.EmptyInput;
-import io.andreapan.level02.exercise1.exceptions.InputMismatchChar;
-import io.andreapan.level02.exercise1.exceptions.InputMismatchString;
-import io.andreapan.level02.exercise1.exceptions.InputMismatchYesOrNo;
+import io.andreapan.level02.exercise1.exceptions.EmptyInputException;
+import io.andreapan.level02.exercise1.exceptions.InputMismatchCharException;
+import io.andreapan.level02.exercise1.exceptions.InputMismatchStringException;
+import io.andreapan.level02.exercise1.exceptions.InputMismatchYesOrNoException;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -17,12 +17,12 @@ public class Input {
     }
 
 
-    public static String readNonEmptyLine(String message) throws EmptyInput {
+    public static String readNonEmptyLine(String message) throws EmptyInputException {
         System.out.println(message);
         String input = scanner.nextLine();
 
         if (input.trim().isEmpty()) {
-            throw new EmptyInput();
+            throw new EmptyInputException();
         }
 
         return input;
@@ -98,15 +98,15 @@ public class Input {
                 String userInput = readNonEmptyLine(message);
 
                 if (userInput.length() != 1) {
-                    throw new InputMismatchChar();
+                    throw new InputMismatchCharException();
                 } else {
                     return userInput.charAt(0);
                 }
 
-            } catch (EmptyInput e) {
+            } catch (EmptyInputException e) {
                 System.out.println("EmptyInput: " + e.getMessage());
             }
-            catch (InputMismatchChar e) {
+            catch (InputMismatchCharException e) {
                 System.out.println("InputMismatchChar: " + e.getMessage());
 
             }
@@ -121,15 +121,15 @@ public class Input {
                 String userInput = readNonEmptyLine(message);
 
                 if (userInput.trim().length() == 1) {
-                    throw new InputMismatchString();
+                    throw new InputMismatchStringException();
 
                 } else {
                     return userInput;
                 }
 
-            } catch (EmptyInput e) {
+            } catch (EmptyInputException e) {
                 System.out.println("EmptyInput: " + e.getMessage());
-            } catch (InputMismatchString e) {
+            } catch (InputMismatchStringException e) {
                 System.out.println("InputMismatchString: " + e.getMessage());
 
             }
@@ -151,10 +151,10 @@ public class Input {
                     case 'n', 'N':
                         return false;
                     default:
-                        throw new InputMismatchYesOrNo();
+                        throw new InputMismatchYesOrNoException();
                 }
 
-            } catch (InputMismatchYesOrNo e) {
+            } catch (InputMismatchYesOrNoException e) {
                 System.out.println("InputMismatchYesOrNo: " + e.getMessage());
 
             }
