@@ -1,4 +1,4 @@
-## s1-01-inheritance-and-polymorphism
+## s1-02-exceptions
 ## Java Exception Handling Practice
 
 🛠️ **Java Exception Handling Exercises**
